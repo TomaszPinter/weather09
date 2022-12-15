@@ -24,4 +24,84 @@
         text-shadow: 1px 1px 1px #000;
         margin: 0 0 40px 0;
     }
+
+    &__form {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    &__city {
+        display: block;
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 15px;
+        outline: none;
+        border: 2px solid $inputBorderColor;
+        font-size: 18px;
+
+        &--error {
+            border-color: $inputBorderColorError;
+        }
+
+
+    }
+
+    &__location {
+        color: $titleColor;
+        @include fluid-type(320px, 1920px, 20px, 40px);
+        font-family: $headerFontFamily;
+        letter-spacing: 2px;
+        text-shadow: 1px 1px 1px #000;
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+
+    &__info {
+        padding: 20px;
+        border-radius: 30px;
+        background-color: rgba(47, 94, 170, 0.527);
+        color: #fff;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__temp {
+        display: flex;
+        align-items: flex-start;
+        gap: 5px;
+
+
+    }
+
+    &__num {
+        font-size: 50px;
+
+    }
+
+    &__unit {
+        font-size: 20px;
+    }
+
+    &__text {
+        margin: 0 0 6px 0;
+        font-size: 14px;
+
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+
+    &__error {
+        border-radius: 10px;
+        padding: 10px;
+        color: #fff;
+        background-color: rgba(151, 76, 19, 0.502);
+        font-weight: 600px;
+    }
+
+    &__loader {
+        display: none;
+    }
 }
